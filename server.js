@@ -18,6 +18,17 @@ app.get('/sam',function(req,res)  {
     res.sendfile(path.join(__dirname, 'ui', 'sam.html'));
    
 });
+var counter =0;
+app.get('/counter',function(req,res)
+{
+    counter=counter+1;
+    res.send(counter.tostring());
+});
+
+
+
+
+
 app.get('/article-three',function(req,res){
     res.sendFile(path.join(__dirname, 'ui', 'article-three.html'));
 });
