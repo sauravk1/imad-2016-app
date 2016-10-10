@@ -1,90 +1,86 @@
 <!doctype html>
 <html>
-a#codepen-link(href='http://www.codepen.io/seanfree' target='_blank')
-.cube-wrap
-  -for (var i = 1; i <= 10; i++)
-    .cube(id='cube-#{i}')
-      .face.front
-      .face.back
-      .face.top
-      .face.bottom
-      .face.left
-      .face.right
-      body
-  background: #0e0e0e
-#codepen-link
-  position: absolute
-  bottom: 30px
-  right: 30px
-  height: 60px
-  width: 60px
-  z-index: 10
-  border-radius: 50%
-  border: 1px solid white
-  border-radius: 50%
-  box-sizing: border-box
-  background-image: url('http://www.seanalexanderfree.com/codepen/avatar.jpg')
-  background-position: center center
-  background-size: cover
-  opacity: 0.5
-  transition: all 0.25s
-  &:hover
-    opacity: 0.8
-    box-shadow: 0 0 6px rgba(225,235,255,0.8)
-.cube-wrap
-  $dim: 200px
-  height: 100vh
-  width: 100vw
-  .cube
-    animation: spin linear infinite
-    position: absolute
-    transform: rotateX(-35deg) rotateY(45deg)
-    transform-origin: center center
-    transform-style: preserve-3d
-    .face
-      $dim: $dim
-      border: 1px solid pink
-      box-shadow: 0 0 8px pink
-      box-sizing: border-box
-      color: white
-      position: absolute
-      transition: transform 0.5s
-      transform-style: preserve-3d
-      &:after
-        box-shadow: inset 0 0 8px pink
-        content: ''
-        display: block
-        height: 100%
-        width: 100%
-  @for $i from 10 through 1
-    $c: 1 / (13 - $i) * 20
-    #cube-#{$i}
-      animation-duration: $c * 0.5s
-      height: $dim
-      left: calc(50% - #{$dim / 2})
-      top: calc(50% - #{$dim / 2})
-      width: $dim
-      .face
-        height: $dim
-        width: $dim
-        &.front
-          transform: translateZ($dim / 2)
-        &.back
-          transform: translateZ($dim / -2) rotateY(180deg)
-        &.right
-          transform: rotateY(-270deg) translateX($dim / 2)
-          transform-origin: right top
-        &.left
-          transform: rotateY(270deg) translateX($dim / -2)
-          transform-origin: left center
-        &.top
-          transform: rotateX(90deg) translateY($dim / -2)
-          transform-origin: top center
-        &.bottom
-          transform: rotateX(-90deg) translateY($dim / 2)
-          transform-origin: bottom center
-    $dim: $dim - 20px
-@keyframes spin
-  to
-    transform: rotateX(-35deg) rotateY(405deg)
+<a id="codepen-link" href="http://www.codepen.io/seanfree" target="_blank"></a>
+<div class="cube-wrap">
+  <div id="cube-1" class="cube">
+    <div class="face front"></div>
+    <div class="face back"></div>
+    <div class="face top"></div>
+    <div class="face bottom"></div>
+    <div class="face left"></div>
+    <div class="face right"></div>
+  </div>
+  <div id="cube-2" class="cube">
+    <div class="face front"></div>
+    <div class="face back"></div>
+    <div class="face top"></div>
+    <div class="face bottom"></div>
+    <div class="face left"></div>
+    <div class="face right"></div>
+  </div>
+  <div id="cube-3" class="cube">
+    <div class="face front"></div>
+    <div class="face back"></div>
+    <div class="face top"></div>
+    <div class="face bottom"></div>
+    <div class="face left"></div>
+    <div class="face right"></div>
+  </div>
+  <div id="cube-4" class="cube">
+    <div class="face front"></div>
+    <div class="face back"></div>
+    <div class="face top"></div>
+    <div class="face bottom"></div>
+    <div class="face left"></div>
+    <div class="face right"></div>
+  </div>
+  <div id="cube-5" class="cube">
+    <div class="face front"></div>
+    <div class="face back"></div>
+    <div class="face top"></div>
+    <div class="face bottom"></div>
+    <div class="face left"></div>
+    <div class="face right"></div>
+  </div>
+  <div id="cube-6" class="cube">
+    <div class="face front"></div>
+    <div class="face back"></div>
+    <div class="face top"></div>
+    <div class="face bottom"></div>
+    <div class="face left"></div>
+    <div class="face right"></div>
+  </div>
+  <div id="cube-7" class="cube">
+    <div class="face front"></div>
+    <div class="face back"></div>
+    <div class="face top"></div>
+    <div class="face bottom"></div>
+    <div class="face left"></div>
+    <div class="face right"></div>
+  </div>
+  <div id="cube-8" class="cube">
+    <div class="face front"></div>
+    <div class="face back"></div>
+    <div class="face top"></div>
+    <div class="face bottom"></div>
+    <div class="face left"></div>
+    <div class="face right"></div>
+  </div>
+  <div id="cube-9" class="cube">
+    <div class="face front"></div>
+    <div class="face back"></div>
+    <div class="face top"></div>
+    <div class="face bottom"></div>
+    <div class="face left"></div>
+    <div class="face right"></div>
+  </div>
+  <div id="cube-10" class="cube">
+    <div class="face front"></div>
+    <div class="face back"></div>
+    <div class="face top"></div>
+    <div class="face bottom"></div>
+    <div class="face left"></div>
+    <div class="face right"></div>
+  </div>
+</div>
     </html>
